@@ -1,0 +1,35 @@
+#Se inicializan variables
+set a 1
+set b 2
+set c [expr $a + $b]
+
+#Ejemplo de if
+if {$a > 0} {
+	
+	#Ejemplo de for
+	for {set x 0} {$x < $c} {incr i} {
+		puts "El valor de x es $x"
+	}
+
+	#Ejemplo de switch
+	switch x {
+		"1" {
+			puts "Uno"
+			Evaluar[1+1];
+			Evaluar[1+1*2];
+			Evaluar[-(1+1*6/3-5+7)];
+			Evaluar[-(1+1*6/3-5+1*-2)];
+			Evaluar[-(1+1)];
+		}
+		"2" {
+			puts "Dos"
+		}
+		"3" {
+			puts "Tres"
+		}
+		default {
+			puts "El numero es mayor que tres"
+		}
+
+	}
+}
